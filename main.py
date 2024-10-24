@@ -18,7 +18,7 @@ logging.basicConfig(
 
 def main():
     """Основная функция работы приложения."""
-    create_database()  # Создаем таблицы при каждом запуске
+    create_database()
     updater = Updater(TG_BOT_API_KEY, use_context=True)
     dp = updater.dispatcher
     dp.add_handler(CommandHandler("start", start))
